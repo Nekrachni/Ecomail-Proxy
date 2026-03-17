@@ -75,7 +75,7 @@ public class NewsletterSubscribeFunction(IHttpClientFactory httpClientFactory, I
             var payload = JsonSerializer.Serialize(new
             {
                 subscriber_data = new { email },
-                trigger_autoresponders = false,
+                trigger_autoresponders = true,
                 update_existing = true,
                 resubscribe = false
             });
